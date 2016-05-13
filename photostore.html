@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Photo Locker - Photo Store</title>
+		<meta charset="UTF-8">
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Andrew's Photo Locker"/>
+		<meta property="og:image" content="_img/facebook_img1.jpg"/>
+		<link rel="stylesheet" href="_css/main.css">
+	</head>
+	<body>
+		<img src="_img/banner.jpg" alt="Photo Locker by Andrew Harbarger" class="site_banner">
+		<div id="navigation_bar">
+			<div id="navBar" action="">
+				<a href="home.html"><div class="navButton">Home</div>	</a>
+				<a href="photostore.html"><div class="navButton">Photo Store</div></a>
+				<a href="session.html"><div class="navButton">Sessions</div></a>
+				<a href="login.html"><div class="navButton">Login</div></a>
+			</div>
+		</div>
+		<div id="mainContainer">
+			<h1>The Photo Locker Store</h1>
+			<h3 class="content">Nature Pictures</h3>
+			<p class="content" display="inline">
+				<img src="_img/downstream_vivid_sample.jpg" alt="About Image" class="content_img">
+				<b>Downstream Vivid</b> - $10.00
+			</p>
+			<p class="content" display="inline">
+				<img src="_img/shining_light_sample.jpg" alt="About Image" class="content_img">
+				<b>Shining Light</b> - $12.00
+			</p>
+			<h3 class="content">Architectural Pictures</h3>
+			<p class="content" display="inline">
+				<img src="_img/garden_wall_sample.jpg" alt="Philosophy Image" class="content_img">
+				<b>Garden Wall</b> - $9.00
+			</p>
+		</div>
+		<aside id="side_banner">
+			<h3>Drop your favorite photos below</h3>
+			<img src="_img/drop_zone.jpg" alt="Drop Favorites Here" class="dropzone">
+		</aside>
+	</body>
+	<div id="footer">
+		<p>
+			&copy Andrew Harbarger<br />
+			Content by Andrew Harbarger<br />
+			University of Phoenix: WEB 401<br />
+		</p>
+	</div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+			  appId      : '1298821843479599',
+			  xfbml      : true,
+			  version    : 'v2.6'
+			});
+		};
+
+		(function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+</html>

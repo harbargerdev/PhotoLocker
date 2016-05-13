@@ -1,0 +1,71 @@
+/* This is the main CSS File for PhotoLocker
+	By: Andrew Harbarger
+*/
+body {
+	background-color: #3E3E3E;
+}
+.site_banner {
+	width: 100%;
+}
+#navigation_bar {
+	min-height: 40px;
+	padding-bottom: 10px;
+}
+.navButton {
+	width: 24%;
+	display: inline;
+	min-height: 40px;
+	padding-left: 5.6em;
+	padding-right: 5.6em;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 2em;
+	background-color: gray;
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+	text-align: center;
+}
+#footer {
+	text-align: center;
+	background-color: #3E3E3E;
+	float: bottom;
+}
+h1 {
+	text-align: center;
+}
+#side_banner {
+	background-color: #374D43;
+	width: 29%;
+	min-height: 1400px;
+	float: right;
+	padding-right: 5px;
+	text-align: center;
+}
+#mainContainer {
+	width: 70%;
+	background-color: #40523E;
+	float: left;
+	min-height: 1400px;
+	padding-left: 5px;
+}
+.dropzone {
+	padding: 1em;
+	display: block;
+	margin: 0 auto;
+}
+.content {
+	padding: 5px;
+	background-color: #40523E; 
+}
+.content_img {
+	max-width: 75%;
+	padding-right: 1em;
+}
+form {
+	border-style: solid;
+	width: 60%;
+	padding: .5em;
+	font-weight: bold;
+	margin-left: 10px;
+}

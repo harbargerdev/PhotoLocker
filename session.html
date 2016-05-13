@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Photo Locker - Sessions</title>
+		<meta charset="UTF-8">
+		<meta property="og:url" content=""/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Andrew's Photo Locker"/>
+		<meta property="og:image" content="_img/facebook_img1.jpg"/>
+		<link rel="stylesheet" href="_css/main.css">
+	</head>
+	<body>
+		<img src="_img/banner.jpg" alt="Photo Locker by Andrew Harbarger" class="site_banner">
+		<div id="navigation_bar">
+			<div id="navBar" action="">
+				<a href="home.html"><div class="navButton">Home</div>	</a>
+				<a href="photostore.html"><div class="navButton">Photo Store</div></a>
+				<a href="session.html"><div class="navButton">Sessions</div></a>
+				<a href="login.html"><div class="navButton">Login</div></a>
+			</div>
+		</div>
+		<div id="mainContainer">
+			<h1>The Photo Locker Session Information</h1>
+			<h3 class="content">About Private Sessions</h3>
+			<p class="content">
+				<p class="content">
+					Sessions must be scheduled ahead and time and vary in cost based on distance driven
+					and time of year. Please feel free to contact me with a request and I will gladly 
+					reply to the email within a few days to give a quote, answer any questions, or do 
+					what I can to help you.
+				</p>
+				<img src="_img/session_about.jpg" alt="About Image" class="content_img">
+			</p>
+			<h3 class="content">Information Form</h3>
+			<p class="content">
+				<form action="_scripts/SubmitSessionRequest.js" method="POST" accept-charset="UTF-8">
+					Name:  <input type="text" name="usrName" maxlength="50"><br/><br/>
+					Email:  <input type="email" name="emailAdr"><br/><br/>
+					Date for Appt:  <input type="date" name="apptDate" min="Date()"><br/><br/>
+					Details:<br/><br/>
+					<textarea rows="10" cols="50" name="details"></textarea><br/><br/>
+					<input type="submit" value="Submit">
+				</form>
+				<div
+					class="fb-like"
+					data-share="true"
+					data-width="450"
+					data-show-faces="true">
+				</div>
+			</p>
+		</div>
+		<aside id="side_banner">
+			
+		</aside>
+	</body>
+	<div id="footer">
+		<p>
+			&copy Andrew Harbarger<br />
+			Content by Andrew Harbarger<br />
+			University of Phoenix: WEB 401<br />
+		</p>
+	</div>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+			  appId      : '1298821843479599',
+			  xfbml      : true,
+			  version    : 'v2.6'
+			});
+		};
+
+		(function(d, s, id){
+			 var js, fjs = d.getElementsByTagName(s)[0];
+			 if (d.getElementById(id)) {return;}
+			 js = d.createElement(s); js.id = id;
+			 js.src = "//connect.facebook.net/en_US/sdk.js";
+			 fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+</html>
